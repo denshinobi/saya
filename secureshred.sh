@@ -1,5 +1,5 @@
 #!/bin/bash
-# SecureShred v1.0
+# SecureShred v1.0 overwrites the binary memory of a directory and its contents with zeros. Uses progress bar from "pv." 
 # Written by denshinobi_; Art by Roland Hangg and denshinobi_
 
 # Ensure 'pv' is installed for progress bar functionality
@@ -31,7 +31,6 @@ if [ "$confirm" != "yes" ]; then
     printf "OPERATION CANCELLED.\n"
     exit 1
 fi
-
 cat <<'EOF' 
              ________________________________________________
             /                                                \
