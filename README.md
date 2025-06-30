@@ -1,5 +1,5 @@
 # saya
-**A directory of custom offensive and defensive tools**
+**A directory of custom reporting, offensive, defensive, and overall useful tools**
 
 This repositiory features custom tools for offensive and defensive cybersecurity specialists.
 
