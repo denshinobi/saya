@@ -1,6 +1,6 @@
 #!/bin/bash
-# katana.sh — customize terminal session with a stylized & colorized prompt, with magic engagement title taken in as input, and safe cleanup on exit
-# Written by denshinobi_, art by denshinobi_ adapted from Alvin Sayanna
+# katana.sh v1.2 — customized terminal session: stylized & colorized prompt, title taken in as argument, custom aliases, and safe cleanup on exit.
+# Written by denshinobi_, art by denshinobi_ adapted from Alvin Sayanna & Krogg
 # THIS SCRIPT MUST BE SOURCED, NOT EXECUTED!!! [run `source ./katana.sh <arg>`]
 
 # Validate input: require one argument (ENGAGE string)
@@ -45,24 +45,24 @@ export CLICOLOR_FORCE=1
 alias grep='grep --color=auto'
 export GREP_COLORS='mt=01;38;5;202'
 export LS_COLORS='di=01;38;5;49:ln=01;38;5;39:so=01;38;5;130:pi=01;38;5;130:ex=01;38;5;197:bd=01;38;5;94:cd=01;38;5;94:su=01;38;5;208:sg=01;38;5;178:tw=01;38;5;136:ow=01;38;5;136:st=01;38;5;244:mi=01;38;5;160:or=01;38;5;196:ca=01;38;5;220:mh=01;38;5;246:'
-# | Code | Type                          | Color Description         |
-# |------|-------------------------------|---------------------------|
-# | di   | Directory                     | 49 (turquoise-green)      |
-# | ln   | Symlink                       | 39 (cyan)                 |
-# | so   | Socket                        | 130 (burnt orange)        |
-# | pi   | Named pipe (FIFO)             | 130 (burnt orange)        |
-# | ex   | Executable                    | 197 (pink-red)            |
-# | bd   | Block device                  | 94 (muted blue-grey)      |
-# | cd   | Character device              | 94 (muted blue-grey)      |
-# | su   | setuid executable             | 208 (bright orange)       |
-# | sg   | setgid executable             | 178 (tan/yellow-orange)   |
-# | tw   | Sticky + world-writable dir   | 136 (muted orange-brown)  |
-# | ow   | World-writable dir            | 136 (muted orange-brown)  |
-# | st   | Sticky-only dir               | 244 (soft grey)           |
-# | mi   | Missing file (broken link)    | 160 (bright red)          |
-# | or   | Orphan symlink (broken)       | 196 (intense red)         |
-# | ca   | File with capability bits     | 220 (golden yellow)       |
-# | mh   | Multi-hardlink file           | 246 (neutral grey)        |
+# | Code | Type                          | Color Description         |                                __
+# |------|-------------------------------|---------------------------|                               /=/
+# | di   | Directory                     | 49 (turquoise-green)      |                              /=7
+# | ln   | Symlink                       | 39 (cyan)                 |                             /=7
+# | so   | Socket                        | 130 (burnt orange)        |                         ___/=Z_
+# | pi   | Named pipe (FIFO)             | 130 (burnt orange)        |                        (_L_L_L_)
+# | ex   | Executable                    | 197 (pink-red)            |                          / /
+# | bd   | Block device                  | 94 (muted blue-grey)      |                         / /
+# | cd   | Character device              | 94 (muted blue-grey)      |                        / /
+# | su   | setuid executable             | 208 (bright orange)       |                       / /
+# | sg   | setgid executable             | 178 (tan/yellow-orange)   |                      / /
+# | tw   | Sticky + world-writable dir   | 136 (muted orange-brown)  |                     / /
+# | ow   | World-writable dir            | 136 (muted orange-brown)  |                    / /
+# | st   | Sticky-only dir               | 244 (soft grey)           |                   / /
+# | mi   | Missing file (broken link)    | 160 (bright red)          |                  / /
+# | or   | Orphan symlink (broken)       | 196 (intense red)         |                 / /
+# | ca   | File with capability bits     | 220 (golden yellow)       |                /,'
+# | mh   | Multi-hardlink file           | 246 (neutral grey)        |                `
 export LESS_TERMCAP_mb=$'\E[01;31m'
 export LESS_TERMCAP_md=$'\E[01;38;5;39m'
 export LESS_TERMCAP_me=$'\E[0m'
@@ -70,5 +70,10 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[38;5;246m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[04;38;5;81m'
+
+# Custom Aliases
+alias sheath="source ~/saya/sheath.sh"
+alias alps="ls -alps"
+alias input="read"
 
 # 電忍者
