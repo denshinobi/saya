@@ -6,3 +6,4 @@ This repositiory features custom tools for offensive and defensive cybersecurity
 *the `saya` is the sheath where the katana is housed.*
 
 - [secureshred](https://github.com/denshinobi/saya/blob/main/secureshred.sh)
+- [katana](https://github.com/denshinobi/saya/blob/main/katana.sh)
