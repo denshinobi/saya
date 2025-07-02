@@ -74,6 +74,7 @@ export LESS_TERMCAP_us=$'\E[04;38;5;81m'
 # Custom Aliases
 alias sheath="source ~/saya/sheath.sh"
 alias alps="ls -alps"
+alias ..="cd .."
 alias input="read"
 
 # 電忍者
