@@ -76,5 +76,6 @@ alias sheath="source ~/saya/sheath.sh"
 alias alps="ls -alps"
 alias ..="cd .."
 alias input="read"
+alias home="cd ~/"
 
 # 電忍者
