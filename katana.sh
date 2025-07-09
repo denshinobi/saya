@@ -71,11 +71,19 @@ export LESS_TERMCAP_so=$'\E[38;5;246m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[04;38;5;81m'
 
+# Navigational Aliases
+alias ..="cd .."
+alias ...="cd ../.."
+alias home="cd ~"
+alias saya="cd ~/saya/"
+alias soseki="cd ~/soseki/"
+alias anteisei="cd ~/anteisei/"
+alias kumo="cd ~/kumo/ && ls -l"
+
 # Custom Aliases
 alias sheath="source ~/saya/sheath.sh"
 alias alps="ls -alps"
-alias ..="cd .."
 alias input="read"
-alias home="cd ~/"
+alias ll="ls -l"
 
 # 電忍者
