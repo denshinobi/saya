@@ -1,5 +1,6 @@
 #!/bin/bash
-# SecureShred v1.0 overwrites the binary memory of a directory and its contents with zeros. Uses progress bar from "pv." 
+# SecureShred v1.0 overwrites the binary memory pointed to by a directory, and the contents therein with zeros. 
+# Requires "pv" for progress bar functionality. 
 # Written by denshinobi_; Art by Roland Hangg and denshinobi_
 
 # Ensure 'pv' is installed for progress bar functionality
