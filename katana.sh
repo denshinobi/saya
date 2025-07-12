@@ -82,8 +82,12 @@ alias kumo="cd ~/kumo/ && ls -l"
 
 # Custom Aliases
 alias sheath="source ~/saya/sheath.sh"
+alias harakiri="source ~/saya/harakiri.sh"
 alias alps="ls -alps"
 alias input="read"
 alias ll="ls -l"
+alias bye="exit"
+alias goodbye="exit"
+alias byebye="exit"
 
 # 電忍者
