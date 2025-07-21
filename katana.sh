@@ -81,6 +81,7 @@ alias anteisei="cd ~/anteisei/"
 alias kumo="cd ~/kumo/ && ls -l"
 
 # Custom Aliases
+alias c="clear"
 alias sheath="source ~/saya/sheath.sh"
 alias harakiri="source ~/saya/harakiri.sh"
 alias alps="ls -alps"
@@ -88,6 +89,6 @@ alias input="read"
 alias ll="ls -l"
 alias bye="exit"
 alias goodbye="exit"
-alias byebye="exit"
+alias sayonara="exit"
 
 # 電忍者
